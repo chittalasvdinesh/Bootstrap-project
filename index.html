@@ -1,312 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrapProject</title>
-    <link rel="icon" type="image/x-icon" href="./BsImages/Panel.png">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="./icomoons/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .navbar-dark .navbar-nav .nav-link {
-            color: #ffffff;
-            font-size: 12px;
-            font-family: azo-sans-web, sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            letter-spacing: 2px;
-            transition: 0.2s linear;
-        }
-
-        .navbar-dark .navbar-nav .nav-link:hover,
-        .navbar-dark .navbar-nav .nav-link:focus {
-            color: #79C91B;
-            font-size: 12px;
-            font-family: azo-sans-web, sans-serif;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        .dropdown-menu {
-            border: none;
-            color: #ffffff;
-        }
-
-        .dropdown-item {
-            color: #fff;
-            font-family: azo-sans-web, sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-        }
-
-        .dropdown-item:hover {
-            background-color: transparent;
-            color: #79C91B;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-
-        .nav-link {
-            position: relative;
-        }
-
-        .nav-link::before {
-            content: '';
-            position: absolute;
-            bottom: 0px;
-            left: 20px;
-            background: linear-gradient(to right, #70C618, #C1FA7F);
-            height: 2px;
-            width: 0%;
-        }
-
-        .nav-link:hover::before {
-            width: 80%;
-            transition: 0.3s linear;
-        }
-
-        @media (max-width: 768px) {
-            .nav-link:hover::before {
-                width: 20%;
-                transition: 0.3s linear;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid imp</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../icomoons/style.css">
 </head>
+
 <body>
-    <main class="main-container">
-        <header>
-            <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#0">
-                        <img src="./BsImages/Logo.png" alt="logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav pt-5 ml-auto ml-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TECHNOLOGY</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">FLEXIBILITY</a>
-                            </li>
-                            <li class="nav-item d-block d-md-none d-lg-block">
-                                <a class="nav-link" href="#">PARTNERSHIPS</a>
-                            </li>
-                            <li class="nav-item d-block  d-md-none d-lg-block">
-                                <a class="nav-link" href="#">CASE STUDIES</a>
-                            </li>
-                            <li class="nav-item d-block  d-md-none d-lg-block">
-                                <a class="nav-link" href="#">BLOG</a>
-                            </li>
-                            <li class="nav-item d-block d-md-none d-lg-block">
-                                <a class="nav-link" href="#">ABOUT</a>
-                            </li>
-                            <li class="nav-item d-block d-md-none d-lg-block pr-lg-3">
-                                <a class="nav-link" href="#">CONTACT</a>
-                            </li>
-                            <li class="nav-item dropdown d-none d-md-block d-lg-none">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                    MORE
-                                </a>
-                                <div class="dropdown-menu bg-transparent dropMenu">
-                                    <a class="dropdown-item" href="#">CASE STUDIES</a>
-                                    <a class="dropdown-item" href="#">BLOG</a>
-                                    <a class="dropdown-item" href="#">ABOUT</a>
-                                    <a class="dropdown-item" href="#">CONTACT</a>
-                                </div>
-                            </li>
-                            <li class="nav-item pl-lg-5 pt-1">
-                                <a href="#0" class="d-block logLink">
-                                    <img src="./BsImages/lgBtnGrid.png" alt="lsg" class="loginBtn">
-                                    <span class="loginBtnStl">LOGIN</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="partnership">
-                <div class="container-fluid d-lg-flex justify-content-between align-items-start">
-                    <div class="txtCont mt-5">
-                        <h1>Partnerships heading heading</h1>
-                        <p>Morb non ultricies diam sonec sits amet condimentum nibh. Hestibes lumesees pellentesques.
-                        </p>
-                    </div>
-                    <img src="./BsImages/Speach bubble 2 v2.png" alt="speech" class="img-fluid speechBubble">
-                </div>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+        <img src="../BsImages/Logo.png" alt="Logo">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-un-list navbar-nav ml-auto pt-4">
+            <li class="nav-item"><a class="nav-list-items nav-link" href="#0">TECHNOLOGY </a></li>
+            <li class="nav-item"><a class="nav-list-items nav-link" href="#0">FLEXIBILITY</a></li>
+            <li class="nav-item"><a class="nav-list-items nav-link" href="#0">PARTNERSHIPS</a></li>
+            <li class="nav-item"><a class="nav-list-items nav-link" href="#0">CASE STUDIES </a></li>
+            <li class="nav-item"><a class="nav-list-items nav-link" href="#0">BLOG</a></li>
+            <li class="nav-item"><a class="nav-list-items nav-link" href="#0">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-list-items nav-link" href="#0">CONTACT</a></li>
+            <li class="nav-item pl-lg-5">
+              <a class="login-nav-link nav-link" href="#0">
+                <span class="login-arrow"></span>
+                <span class="login-text">LOGIN</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class=" d-flex flex-lg-row flex-column pt-5">
+            <div class="col-lg-5 pt-4">
+              <h1 class="partnerships-heading-text text-white">Partnerships heading heading</h1>
+              <p class="morb-non-text">Morb non ultricies diam sonec sits amet condimentum nibh. Hestibes lumesees pellentesques. </p>
             </div>
-
-        </header>
-
-        <section class="services-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-1">
-
-                    </div>
-                    <div class="col-lg-7 d-flex  justify-content-center flex-wrap d-lg-flex justify-content-lg-start">
-                        <div class="serviceCard d-flex flex-column justify-content-between m-2">
-                            <div class="card-number">
-                                <span class="number number-one"></span>
-                            </div>
-                            <h4>Tech Providers</h4>
-                            <a href="#0" class="cardArrow"><i class="icon-Arrow"></i></a>
-                        </div>
-                        <div class="serviceCard d-flex flex-column justify-content-between m-2">
-                            <div class="card-number">
-                                <span class="number number-two"></span>
-                            </div>
-                            <h4>R & D Projects</h4>
-                            <a href="#0" class="cardArrow"><i class="icon-Arrow"></i></a>
-                        </div>
-                        <div class="serviceCard d-flex flex-column justify-content-between m-2">
-                            <div class="card-number">
-                                <span class="number number-three"></span>
-                            </div>
-                            <h4>Energy Consultants</h4>
-                            <a href="#0" class="cardArrow"><i class="icon-Arrow"></i></a>
-                        </div>
-                        <div class="serviceCard d-flex flex-column justify-content-between m-2">
-                            <div class="card-number">
-                                <span class="number number-four"></span>
-                            </div>
-                            <h4>Renewable</h4>
-                            <a href="#0" class="cardArrow"><i class="icon-Arrow"></i></a>
-                        </div>
-                    </div>
-                    <div class="serviceText col-12 col-lg-4">
-                        <h2>How our
-                            Partnerships work
-                        </h2>
-                        <p>
-                            Morbi non ultricies diam sonec sit amet condimentum nibh. Vestibu lumesees pellentes ques.
-                            Morbi non ultricies diam sonec sit amet condimentum nibhes.
-                        </p>
-                        <p>
-                            Morbi non ultricies diam sonec sit amet condimentum nibh. Vestibu lumesees pellentes ques.
-                            Morbi non ultricies diam sonec sit amet condimentum nibhes.
-                        </p>
-                        <p>
-                            Morbi non ultricies diam sonec sit amet condimentum nibh. Vestibu lumesees pellentes ques.
-                            Morbi non ultricies diam sonec sit amet condimentum nibhes.
-                        </p>
-                    </div>
-                </div>
+            <div>
+              <img class="grid-img w-100 " src="../BsImages/Speach bubble 2 v2.png" alt="Grid Imp">
             </div>
-        </section>
-
-        <footer class="pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-1">
-
-                    </div>
-                    <div class="col-8 m-auto m-md-0 col-md-6 col-lg-3">
-                        <h5 class="footerHeading">
-                            Newsletter
-                        </h5>
-                        <form class="newsLetterList mt-5">
-                            <input type="text" class="inpItem mb-3" placeholder="Name">
-                            <input type="text" class="inpItem" placeholder="Email address">
-                            <button class="subButton mt-3 mb-3" type="submit">
-                                <span class="submit-btn">SUBMIT</span>
-                                <i class="icon-Arrow arrow"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="col-8 m-auto m-md-0 col-md-6 col-lg-2">
-                        <h5 class="footerHeading">
-                            Get in touch
-                        </h5>
-                        <ul class="newsLetterList mt-5 gitouch">
-                            <li class="contactItems mb-1"><span>Call <a href="tel:+44 (0)1749 372198"
-                                        class="pl-1 details">+44 (0)1749 372198</a></span></li>
-                            <li class="contactItems mb-5"><span>Email <a href="mailto:info@gridimp.com"
-                                        class="ml-1 details">info@gridimp.com </a> </span></li>
-                            <li>
-                                <adress>
-                                    Gridimp Ltd <br>
-                                    Wells Enterprise Centre<br>
-                                    Cathedral Avenue<br>
-                                    Wells BA5 1JJ
-                                </adress>
-
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-8 m-auto m-md-0 col-md-6 col-lg-2">
-                        <h5 class="footerHeading">
-                            Quick links
-                        </h5>
-                        <ul class="newsLetterList quicklist mt-5">
-                            <li>
-                                <a href="#0">PRODUCTS</a>
-                            </li>
-                            <li>
-                                <a href="#0">FLEXIBILITY</a>
-                            </li>
-                            <li>
-                                <a href="#0">PARTNERSHIPS</a>
-                            </li>
-                            <li>
-                                <a href="#0">CASE STUDIES</a>
-                            </li>
-                            <li>
-                                <a href="#0">BLOG</a>
-                            </li>
-                            <li>
-                                <a href="#0">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="#0">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-8 m-auto m-md-0 col-md-6 col-lg-2">
-                        <h5 class="footerHeading">
-                            Social
-                        </h5>
-                        <div class="newsLetterList sociallinks mt-5 mb-5">
-                            <a href="#0"><i class="icon-linkedin icon"></i></a>
-                            <a href="#0"><i class="icon-facebook2 icon"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 d-lg-flex flex-column justify-content-end">
-                        <img src="./BsImages/Logo.png" alt="gridLog" class="img-fluid logo">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-
-                    </div>
-                    <div class="col-lg-8 col-md-8 d-flex bottom-section mt-3 text-center">
-                        <p class="copyrightTxt">&copy; Copyright 2021 Gridimp Ltd. All Rights Reserved.</p>
-                        <a href="#0" class="ml-1 bottom-links">Privacy</a>
-                        <span class="ml-1"> I </span>
-                        <a href="#0" class="ml-1 bottom-links">Terms </a>
-                        <span class="ml-1"> I </span>
-                        <a href="#0" class="ml-1 bottom-links">Careers </a>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <ul class="cards-container col-xl-8 d-flex justify-content-sm-center flex-row flex-wrap">
+            <li class="each-card d-flex flex-column justify-content-between m-3 p-4">
+              <span class="card-number number-one"></span>
+              <h4 class="card-heading">Tech Providers</h4>
+              <i class="right-arrow fas fa-arrow-right"></i>
+            </li>
+            <li class="each-card d-flex flex-column justify-content-between m-3 p-4">
+              <span class="card-number number-two"></span>
+              <h4 class="card-heading">R&D Projects</h4>
+              <i class="right-arrow fas fa-arrow-right"></i>
+            </li>
+            <li class="each-card d-flex flex-column justify-content-between m-3 p-4">
+              <span class="card-number number-three"></span>
+              <h4 class="card-heading">Energy Consultants</h4>
+              <i class="right-arrow fas fa-arrow-right"></i>
+            </li>
+            <li class="each-card d-flex flex-column justify-content-between m-3 p-4">
+              <span class="card-number number-four"></span>
+              <h4 class="card-heading">Renewable</h4>
+              <i class="right-arrow fas fa-arrow-right"></i>
+            </li>
+          </ul>
+          <div class="col-xl-4 justify-content-md-center"> 
+            <h1 class="text-white how-our-text">How our Partnerships work</h1>
+            <p class="text-white how-our-sibling-para-text">Morbi non ultricies diam sonec sit amet condimentum nibh. Vestibu lumesees pellentes ques. Morbi non ultricies diam sonec sit amet condimentum nibhes</p>
+            <p class="text-white how-our-sibling-para-text">Morbi non ultricies diam sonec sit amet condimentum nibh. Vestibu lumesees pellentes ques. Morbi non ultricies diam sonec sit amet condimentum nibhes</p>
+            <p class="text-white how-our-sibling-para-text">Morbi non ultricies diam sonec sit amet condimentum nibh. Vestibu lumesees pellentes ques. Morbi non ultricies diam sonec sit amet condimentum nibhes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-container">
+    <section>
+      <div class="container">
+        <div class="row m-3">
+          <div class="col-sm-6 col-lg-3 pb-5 pb-lg-0">
+            <h4 class="footer-heading mb-3 mb-lg-5 text-white pb-lg-2">Newsletter</h4>
+            <form class="footer-form" action="#0">
+              <input class="input-field-name pl-2 mb-3" placeholder="Name" type="text">
+              <input class="input-field-email pl-2 mb-3" placeholder="Email address" type="text">
+              <button class="submit-btn btn d-block" type="submit">
+                <span class="submit-cont d-flex justify-content-between align-items-center">SUBMIT</span>
+              </button>
+            </form>
+          </div>
+          <div class="get-in-touch-cont col-sm-6 col-lg-3 pb-5 pb-lg-0">
+            <h4 class="footer-heading mb-3 mb-lg-5 text-white pb-2">Get in touch</h4>
+            <label class="text-white" for="call">Call</label>
+            <a class="get-in-touch-number" id="call" href="#0">+44 (0)1749 372198</a>
+            <br>
+            <label class="text-white" for="email">Email</label>
+            <a class="get-in-touch-email" id="email" href="#0">info@gridimp.com</a>
+            <address class="address-cont text-white mt-3">
+              Gridimp Ltd Wells Enterpise Centre Cathedral Avenue Wells BA5 1jj
+            </address>
+          </div>
+          <div class="quick-links-cont col-sm-6 col-lg-3 pb-5 pb-lg-0">
+            <h4 class="footer-heading mb-3 mb-lg-5 text-white pb-2">Quick links</h4>
+            <a class="quick-links d-block" href="#0">PRODUCTS</a>
+            <a class="quick-links d-block" href="#0">FELXIBILITY</a>
+            <a class="quick-links d-block" href="#0">PARTNERSHIPS</a>
+            <a class="quick-links d-block" href="#0">CASE STUDIES</a>
+            <a class="quick-links d-block" href="#0">BLOG</a>
+            <a class="quick-links d-block" href="#0">ABOUT</a>
+            <a class="quick-links d-block" href="#0">CONTACT</a>
+          </div>
+          <div class="col-sm-6 col-lg-3 pb-5 pb-lg-0">
+            <h4 class="footer-heading mb-3 mb-lg-5 text-white pb-2">Social</h4>
+            <div class="newsLetterList sociallinks mt-5 mb-5">
+                <a href="#0"><i class="icon-linkedin icon"></i></a>
+                <a href="#0"><i class="icon-facebook2 icon"></i></a>
             </div>
-        </footer>
-    </main>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copy-right-content d-flex flex-row justify-content-center justify-content-lg-end">
+          <div class="inner-copy-right-content d-flex flex-column flex-lg-row justify-content-center justify-content-md-between align-items-center text-white">
+            <p class="copy-right-text pt-4">&copy; Copyright 2021 Gridimp Ltd. All Rights Reserved. Privacy  |  Terms  |  Careers</p>
+            <img class="footer-logo" src="../BsImages/Logo.png" alt="Logo">
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  
 </body>
 
 </html>
